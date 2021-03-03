@@ -20,6 +20,8 @@ git push origin main
 
 ```
 
+Make sure your python code snippets are placed in Python code blocks.  See examples in this README.md file. Make sure these code snippets have a valid Python syntax. Fill in your name at the designated spot.
+
 <!--Delete the instruction above -->
 
 Name: <!--Insert your name here -->
@@ -343,7 +345,7 @@ B
 
 #### Translation and rotation of vectors
 
-Consider the point P with position vector given by:
+Consider the point P with position vector in 3D given by:
 
 ![Position vector](./assets/position.png)
 
@@ -359,4 +361,157 @@ It is then possible to define several matrices:
 
 ![Rotation z](./assets/rotz.png)
 
+With θ being the angle of rotation around the respective axis.
+
 ![Translation](./assets/translation.png)
+
+With a, b, and c being the respective translations along the x, y and z axis.
+
+| Assignment |
+| :--------- |
+| Write functions which rotate a position vector. around and translate a position vector along the axis.|
+| In total 6 functions: translateX, translateY, translateZ and rotateX, rotateY, rotateZ. |
+| Provide examples for each of these functions.|
+| **Solution:** |
+| <!--Insert here -->|
+
+## Plotting data with matplotlib
+
+### Plotting temperature data
+
+There are several external packages for creating plots in Python. One such
+package is matplotlib, which comes with the Anaconda distribution.
+
+```python
+import matplotlib.pyplot as plt
+plt.ion()
+temps = [ 71, 71, 68, 69, 68, 69, 68, 74, 77, 82, 85, 86, 88, 86, 85, 86, 84, 79, 77, 75, 73, 71, 70, 70, 69, 69, 69, 69, 67, 68, 68, 73, 76, 77, 82, 84, 84, 81, 80, 78, 79, 78, 73, 72, 70, 70, 68, 67 ]
+plt.plot(temps, '-bo')
+plt.savefig('temperature.pdf', format = 'pdf')
+plt.show()
+```
+
+| Assignment |
+| :--------- |
+| Execute the python code of the example and place the observed plot in the file here.|
+| **Solution:** |
+| <!--Insert here -->|
+
+### Plotting mathematical functions
+
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+# Data for plotting
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s)
+
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+title='About as simple as it gets, folks')
+ax.grid()
+
+fig.savefig("test.png")
+plt.show()
+matplotlib.axes.Axes.plot
+matplotlib.pyplot.plot
+matplotlib.pyplot.subplots
+matplotlib.figure.Figure.savefig
+
+```
+
+| Assignment |
+| :--------- |
+| Execute the python code of the example and place the observed plot in the file here.|
+| Change the Python code and plot the following function: y(t) = A.sin⁡(ω.t+φ), choose A, ω and φ. |
+| Change the Python code a sine and cosine function in the same plot. Choose ω. |
+| **Solution:** |
+| <!--Insert plots here -->|
+
+### Geometric transformations
+
+In this example we create a rotation matrix and use it to rotate a random set of points.
+
+```python
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+# rotate a set of points pi/3 radians (60 deg)
+Rot = lambda theta: [[np.cos(theta), -np.sin(theta)],[np.sin(theta), np.cos(theta)]]
+R = Rot(np.pi/3)
+print(R)
+
+#create a list of 2-D points
+points = np.array([[1,0],[1.5,0],[2,0],[1,0.25],[1.5,0.25],[1,0.5]])
+#Now rotate them
+rpoints = np.array([R @ p for p in points])
+#Show the two sets of points
+plt.ion()
+plt.scatter([c[0] for c in points], [c[1] for c in points])
+plt.scatter([c[0] for c in rpoints],[c[1] for c in rpoints])
+plt.show()
+wait = input("Press Enter to continue.")
+
+```
+
+| Assignment |
+| :--------- |
+| Execute the python code of the example and place the observed plot in the file here.|
+| Change the Python code and plot the rotations π/4, π/2, 3π/4 radians in the same plot.|
+| Change the Python code to use your own rotation function as defined in "translation and rotation of vectors". |
+| **Solution:** |
+| <!--Insert plots here -->|
+
+### Clustering of data
+
+In this example we cluster a randomly generated set of N = 300 points in three groups.
+
+```python
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+plt.ion()
+X = np.concatenate([[0.3*np.random.randn(2) for i in range(100)],
+[[1,1] + 0.3*np.random.randn(2) for i in range(100)], [[1,-1]
++ 0.3* np.random.randn(2) for i in range(100)]])
+
+plt.subplot(2,1,1)
+plt.scatter( X[:,0],X[:,1])
+plt.xlim(-1.5,2.5)
+plt.ylim(-2,2)
+plt.show()
+
+from sklearn.cluster import KMeans
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+labels = kmeans.labels_
+group_representative = kmeans.cluster_centers_
+J_clust = kmeans.inertia_
+grps = [[X[i,:] for i in range(300) if labels[i]==j] for j in range(3)]
+plt.subplot(2,1,2)
+plt.scatter([c[0] for c in grps[0]],[c[1] for c in grps[0]])
+plt.scatter([c[0] for c in grps[1]],[c[1] for c in grps[1]])
+plt.scatter([c[0] for c in grps[2]],[c[1] for c in grps[2]])
+plt.xlim(-1.5,2.5)
+plt.ylim(-2,2)
+plt.show()
+wait = input("Press Enter to continue.")
+
+```
+
+| Assignment |
+| :--------- |
+| Execute the python code of the example and place the observed plot in the file here.|
+| Change the code to generate 1000 random points and cluster the random data in 5 groups. Plot the results |
+| **Solution:** |
+| <!--Insert plots here -->|
+
+## Further information
+
+* [Matrices in Python](https://www.w3schools.in/python-data-science/matrices-in-python/)
+* [Matrix Arithmetics under NumPy and Python](https://www.python-course.eu/matrix_arithmetic.php)
+* [Matrix manipulation in Python](https://www.tutorialspoint.com/matrix-manipulation-in-python)
+* [Vectors, Matrices and Arrays in NumPy](https://www.oreilly.com/library/view/machine-learning-with/9781491989371/ch01.html)
