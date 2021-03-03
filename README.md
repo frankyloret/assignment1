@@ -57,11 +57,15 @@ x = [-1.1, 0.0, 3.6, 7.2]
 len(x)
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code and print the value len(x). |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code and print the value len(x).
+
+**Solution:**  <!--Insert here -->
+
+--- 
 
 Another common way to represent vectors in Python is to use a **numpy** array. To do so, we must first import the **numpy** package.
 
@@ -71,11 +75,15 @@ x = np.array([-1.1, 0.0, 3.6, 7.2])
 len(x)
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code and print the value len(x). |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+ 
+---
+
+* Execute the Python code and print the value len(x).
+
+**Solution:**  <!--Insert here -->
+
+--- 
 
 #### Vector addition and substraction
 
@@ -89,13 +97,18 @@ print('Sum of arrays:', x+y)
 print('Difference of arrays:', x-y)
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code. |
-| What are the results of the two print statements. |
-| Explain the results. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+ 
+* Execute the Python code. 
+* What are the results of the two print statements. 
+* Explain the results. 
+
+ **Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Scalar-vector multiplication and division
 
@@ -117,13 +130,18 @@ print('Sum of arrays:', x / 2.2)
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code of both examples. |
-| What are the results? |
-| Explain the results. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code of both examples. 
+* What are the results? 
+* Explain the results. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Linear combination of vectors
 
@@ -140,13 +158,18 @@ print(c)
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code of both examples. |
-| What is the value of c? |
-| Explain the results. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code of both examples. 
+* What is the value of c? 
+* Explain the results. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 To illustrate some additional Python syntax, we create a function that takes a list of coefficients and a list of vectors as its argument (input), and returns the linear combination (output).
 
@@ -161,14 +184,19 @@ def lincomb(coef, vectors):
 lincomb([alpha, beta], [a,b])
 ```
 
-| Assignment |
-| :--------- |
-| Assign values to variables a, b, alpha and beta.|
-| Execute the Python code and print the value of variable lincomb. |
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Assign values to variables a, b, alpha and beta.
+* Execute the Python code and print the value of variable lincomb. 
+* What is the result? 
+* Explain the result.
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Inner product
 
@@ -183,13 +211,18 @@ print(np.inner(x,y))
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code and print the value of the inner product.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment** 
+
+---
+
+* Execute the Python code and print the value of the inner product.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Checking properties
 
@@ -209,13 +242,18 @@ print('LHS:',lhs)
 print('RHS:',rhs)
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 ## Linear functions
 
@@ -228,13 +266,18 @@ f = lambda x: x[0] + x[1] - x[3]**2
 f([-1,0,1,2])
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code and print the value of variable f.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code and print the value of variable f.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 ### Average function
 
@@ -246,13 +289,18 @@ x = [1,-3,2,-1]
 avg(x)
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code and print the value of variable f.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code and print the value of variable f.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 ## Matrices
 
@@ -266,13 +314,18 @@ V = np.array([[1,2], [2,3], [0,4]])
 U+V
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 ### Inverse
 
@@ -285,13 +338,19 @@ B = np.linalg.inv(A)
 B
 ```
 
-| Assignment |
-| :--------- |
-| Execute the Python code.|
-| What is the result? |
-| Explain the result. |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the Python code.
+* What is the result? 
+* Explain the result. 
+
+**Solution:** 
+
+ <!--Insert here -->
+
+---
 
 ### Exercises
 
@@ -299,49 +358,68 @@ B
 
 ![Matrix addition exercises](./assets/addition.png)
 
-| Assignment |
-| :--------- |
-| Write the Python code for|
-| A+B, B+A, A-B, B-A |
-| What is your conclusion? |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Write the Python code for
+* A+B, B+A, A-B, B-A 
+* What is your conclusion? 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Scalar multiplication
 
 ![Matrix A](./assets/matrixA.png)
 
-| Assignment |
-| :--------- |
-| Write the Python code for|
-| 2.A |
-| -3.A |
-| ½.A|
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Write the Python code for
+    * 2.A 
+    * -3.A 
+    * ½.A
+
+**Solution:** 
+
+ <!--Insert here -->
+
+---
 
 #### Matrix multiplication
 
 ![Matrix multiplication exercises](./assets/multiplication.png)
 
-| Assignment |
-| :--------- |
-| Write the Python code for|
-| C=A.B |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment** 
+
+---
+* Write the Python code for C=A.B 
+
+**Solution:** 
+<!--Insert here -->
+
+---
 
 ![Matrix multiplication exercises](./assets/multiplication-3.png)
 
-| Assignment |
-| :--------- |
-| Write the Python code for|
-| B.C |
-| A(B.C) |
-| (A.B).C |
-| What is your conclusion? |
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Write the Python code for
+    * B.C 
+    * A(B.C) 
+    * (A.B).C 
+    * What is your conclusion? 
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 #### Translation and rotation of vectors
 
@@ -367,13 +445,18 @@ With θ being the angle of rotation around the respective axis.
 
 With a, b, and c being the respective translations along the x, y and z axis.
 
-| Assignment |
-| :--------- |
-| Write functions which rotate a position vector. around and translate a position vector along the axis.|
-| In total 6 functions: translateX, translateY, translateZ and rotateX, rotateY, rotateZ. |
-| Provide examples for each of these functions.|
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Write functions which rotate a position vector. around and translate a position vector along the axis.
+* In total 6 functions: translateX, translateY, translateZ and rotateX, rotateY, rotateZ. 
+* Provide examples for each of these functions.
+
+**Solution:** 
+ <!--Insert here -->
+
+---
 
 ## Plotting data with matplotlib
 
@@ -391,11 +474,16 @@ plt.savefig('temperature.pdf', format = 'pdf')
 plt.show()
 ```
 
-| Assignment |
-| :--------- |
-| Execute the python code of the example and place the observed plot in the file here.|
-| **Solution:** |
-| <!--Insert here -->|
+**Assignment**
+
+---
+
+* Execute the python code of the example and place the observed plot in the file here.
+
+**Solution:** 
+<!--Insert here -->
+
+---
 
 ### Plotting mathematical functions
 
@@ -423,13 +511,18 @@ matplotlib.figure.Figure.savefig
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the python code of the example and place the observed plot in the file here.|
-| Change the Python code and plot the following function: y(t) = A.sin⁡(ω.t+φ), choose A, ω and φ. |
-| Change the Python code a sine and cosine function in the same plot. Choose ω. |
-| **Solution:** |
-| <!--Insert plots here -->|
+**Assignment**
+
+---
+
+* Execute the python code of the example and place the observed plot in the file here.
+* Change the Python code and plot the following function: y(t) = A.sin⁡(ω.t+φ), choose A, ω and φ. 
+* Change the Python code a sine and cosine function in the same plot. Choose ω. 
+
+**Solution:** 
+ <!--Insert plots here -->
+
+---
 
 ### Geometric transformations
 
@@ -458,13 +551,18 @@ wait = input("Press Enter to continue.")
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the python code of the example and place the observed plot in the file here.|
-| Change the Python code and plot the rotations π/4, π/2, 3π/4 radians in the same plot.|
-| Change the Python code to use your own rotation function as defined in "translation and rotation of vectors". |
-| **Solution:** |
-| <!--Insert plots here -->|
+**Assignment** 
+
+---
+
+* Execute the python code of the example and place the observed plot in the file here.
+* Change the Python code and plot the rotations π/4, π/2, 3π/4 radians in the same plot.
+* Change the Python code to use your own rotation function as defined in "translation and rotation of vectors". 
+
+**Solution:** 
+ <!--Insert plots here -->
+
+---
 
 ### Clustering of data
 
@@ -502,12 +600,17 @@ wait = input("Press Enter to continue.")
 
 ```
 
-| Assignment |
-| :--------- |
-| Execute the python code of the example and place the observed plot in the file here.|
-| Change the code to generate 1000 random points and cluster the random data in 5 groups. Plot the results |
-| **Solution:** |
-| <!--Insert plots here -->|
+**Assignment**
+
+---
+
+* Execute the python code of the example and place the observed plot in the file here.
+* Change the code to generate 1000 random points and cluster the random data in 5 groups. Plot the results 
+
+**Solution:** 
+ <!--Insert plots here -->
+
+---
 
 ## Further information
 
