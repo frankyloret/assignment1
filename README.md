@@ -22,6 +22,8 @@ git push origin main
 
 Make sure your python code snippets are placed in Python code blocks.  See examples in this README.md file. Make sure these code snippets have a valid Python syntax. Fill in your name at the designated spot.
 
+Also fill in [REPORT.md](./REPORT.md)
+
 <!--Delete the instruction above -->
 
 Name: <!--Insert your name here -->
