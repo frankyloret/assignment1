@@ -7,7 +7,7 @@
 1. To start clone this repository:
 
 ```bash
-git clone git@github.com:ai-programming-21/assignment1-<your username here>.git
+git clone git@github.com:ai-programming-23/assignment1-<your username here>.git
 ```
 
 1. Complete the assignment and your report.
