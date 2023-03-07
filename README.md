@@ -119,7 +119,7 @@ If *a* is a number and **x** is a **numpy** array (vector), you can express the 
 ```python
 import numpy as np
 x = np.array([1,2,3])
-print('Sum of arrays:', 2.2 * x)
+print('Array x:', 2.2 * x)
 
 ```
 
@@ -128,7 +128,7 @@ You can carry out scalar-vector division as **x/a**.
 ```python
 import numpy as np
 x = np.array([1,2,3])
-print('Sum of arrays:', x / 2.2)
+print('Array x:', x / 2.2)
 
 ```
 
