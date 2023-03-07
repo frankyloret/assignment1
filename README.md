@@ -209,7 +209,7 @@ In Python the inner product of x and y can be found using **np.inner(x,y)**
 import numpy as np
 a = np.array([-1,2,2])
 b = np.array([1,0,-3])
-print(np.inner(x,y))
+print(np.inner(a,b))
 
 ```
 
